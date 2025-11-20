@@ -1,0 +1,114 @@
+/* Temel reset ve body stilleri */
+
+body{
+
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #f9f9f9;
+}
+
+.app-container{
+    display: flex;
+    height: 100vh;
+}
+
+/* Sol panel */
+
+.recipes-panel{
+    width: 350px;
+    background: #fff;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+    overflow-y: auto;
+}
+
+#recipe-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#recipe-list li{
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#recipe-list li:hover{
+    background-color: #f0f0f0;
+}
+
+/* Sağ panel */
+
+.recipe-details-panel {
+    flex:1 ;
+    padding: 40px;
+}
+
+#welcome-message{
+    text-align: center;
+    color: #888;
+}
+
+.hidden{
+    display: none !important;
+}
+
+/*butonlar */
+
+.btn-primary{
+    width: 100%;
+    padding: 15px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+/*modal stilleri */
+
+.modal-overlay{
+
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content{
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    width: 500px;
+}
+
+#add-recipe-form{
+    display:flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#add-recipe-form input, #add-recipe-form textarea{
+
+    padding: 10px;
+    font-size: 1em;
+    border:1px solid #ccc;
+    border-radius: 4px;
+
+}
+
+.modal-actions{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+}
