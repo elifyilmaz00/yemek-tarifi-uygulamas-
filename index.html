@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Benim Yemek Kitabım</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    
+    <div class="app-container">
+
+        <!--SOL PANEL: TARİF LİSTESİ-->
+        <aside class="recipes-panel">
+            <h1>Tariflerim</h1>
+            <ul id="recipe-list">
+                <!--Reçete listesi JS ile doldurulacak-->
+            </ul>
+            <button id="add-recipe-btn" class="btn-primary">+ Yeni Reçete Ekle</button>
+        </aside>
+
+        <!--SAĞ PANEL: REÇETE DETAYI-->
+        <main class="recipe-details-panel">
+            <div id="welcome-message">
+                <h2>Tarif Kitabına Hoş Geldin!</h2>
+                <p>Görüntülemek için bir reçete seçin veya yeni bir tane ekleyin.</p>
+
+            </div>
+
+            <div id="recipe-content" class="hidden">
+
+                <!--Seçilen reçetenin içeriği JS ile doldurulacak-->
+
+            </div>
+        </main>>
+    </div>
+
+    <!--YENİ REÇETE EKLEME MODALI (BAŞLANGICA GİZLİ)-->
+    <div id="add-recipe-modal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <h2>Yeni Tarif Ekle</h2>
+            <form id="add-recipe-form">
+                <input type="text" id="new-title" placeholder="Tarif Adı" required>
+                <textarea id="new-ingredients" placeholder="Maalzemeler (Virgülle ayırın)" required></textarea>
+                <textarea id="new-instructions" placeholder="Yapılışı" required></textarea>
+                <input type="url" id="new-image" placeholder="Resim URL'si">
+                <div class="modal-actions">
+                    <button type="submit" class="btn-primary">Kaydet</button>
+                    <button type="button" id="cancel-btn">İptal</button>
+
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+
+    <script type="module" src="./src/main.js"></script>
+    
+</body>
+</html>
