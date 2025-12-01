@@ -2,7 +2,7 @@
 
 const recipeListEl= document.querySelector("#recipe-list");
 const welcomeMessageEl= document.querySelector("#welcome-message");
-const recipeContentEl= document.querySelector("#recipe-content");
+const recipeContentEl= document.querySelector("#recipe-content"); 
 
 /**
  * Sol paneldeki tarif listesini ekrana çizer
