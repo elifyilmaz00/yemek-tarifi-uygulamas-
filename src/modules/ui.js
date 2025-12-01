@@ -61,3 +61,19 @@ export function renderRecipeDetails(recipe){
         
     `
 }
+
+/**
+ * Yeni reçete ekleme modalını gösterir veya gizler
+ * @param {boolean} show - Eğere true ise modal gösterilir, false ise gizlenir.
+ */
+
+export function toggleModal(show){
+    const modal = document.querySelector("#add-recipe-modal");
+    if(show){
+        modal.classList.remove("hidden");
+    }
+
+    else{
+        modal.classList.add("hidden");
+    }
+}
