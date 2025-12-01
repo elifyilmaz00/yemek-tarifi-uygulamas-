@@ -17,22 +17,31 @@ body{
 .recipes-panel{
     width: 350px;
     background: #fff;
-    padding: 20px;
     border-right: 1px solid #ddd;
-    overflow-y: auto;
+    display: flex; /* Flexbox'ı aktive ediyoruz */
+    flex-direction: column; /* Elemanları dikeyde (alt alta) sıralıyoruz */
+    height: 100vh; /* Panelin yüksekliğini ekranın tamamı yapıyoruz */
 }
 
 #recipe-list{
     list-style: none;
     padding: 0;
     margin: 0;
+    overflow-y: auto; /* Sadece bu liste alanı scroll edilebilir olsun */
+    flex-grow: 1; /* MEVCUT TÜM BOŞ ALANI BU LİSTE DOLDURSUN (SİHİR BURADA) */
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
 }
 
 #recipe-list li{
-    padding: 15px;
+    padding: 15px 20px; /* Kenar boşlukları için */
     border-bottom: 1px solid #eee;
     cursor: pointer;
     transition: background-color 0.2s;
+}
+
+#recipe-list li:last-child {
+    border-bottom: none;
 }
 
 #recipe-list li:hover{
@@ -58,7 +67,7 @@ body{
 /*butonlar */
 
 .btn-primary{
-    width: 100%;
+    /* (Mevcut buton stilin kalabilir, ama daha iyi hizalama için düzenleyelim) */
     padding: 15px;
     background: #007bff;
     color: white;
@@ -66,7 +75,8 @@ body{
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    margin-top: 20px;
+    margin: 20px; /* Kenar boşlukları için */
+    flex-shrink: 0; /* Butonun küçülmesini engelle */
 }
 
 /*modal stilleri */
