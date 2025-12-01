@@ -14,7 +14,7 @@ export const initialRecipes = [
         "tuz, nane, pul biber"
     ], 
 
-    insturctions: "Soğanı kavurun, salçayı ekleyin. Mercimeği ve suyu ekleyip pişirin. Baharatları ekleyip blendere'dan geçirin.",
+    instructions: "Soğanı kavurun, salçayı ekleyin. Mercimeği ve suyu ekleyip pişirin. Baharatları ekleyip blendere'dan geçirin.",
     image: "https://i.nefisyemektarifleri.com/2018/01/15/mercimek-corbasi-3.jpg"
 },
 
@@ -22,7 +22,7 @@ export const initialRecipes = [
     id: 2,
     title: "Menemen",
     ingredients: ["3 adet domates", "2 adet yeşil biber", "2 adet yumurta", "Tuz, karabiber"],
-    insturctions: "Biberleri ve domatesleri doğrayıp pişirin. Yumurtaları kırıp karıştırarak pişirin. Baharatları ekleyin.",
+    instructions: "Biberleri ve domatesleri doğrayıp pişirin. Yumurtaları kırıp karıştırarak pişirin. Baharatları ekleyin.",
     image: "https://i.nefisyemektarifleri.com/2018/07/09/menemen-tarifi-fotografli.jpg"
 
 }
